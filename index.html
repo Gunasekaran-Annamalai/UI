@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draup Visualization</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://s3.us-east-2.amazonaws.com/draupassets/icons/draup-favicon.ico">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="poppins.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="normalize.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="serviceWorker.js" defer></script>
+    <script src="vendor.js" defer></script>
+    <script src="delighted.js" defer></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="root" style="height: 100%">
+        <div class="draupapp-main-container" style="height: 100%">
+        <div class="draup-container-fluid container-fluid text-center page-main-container new-gray-background">
+            <div class="main-scrollable-div">
+                <div class="page-viewport">
+                    <div class="notifications-wrapper"></div>
+                    <div class="spacious-header-container compound-header">
+                        <nav expand="sm" bg="light" variant="light" class="draup-header elevation-sm navbar-fixed-top  navbar navbar-default">
+                            <div class="container-fluid">
+                                <a class="draup-logo-container navbar-brand" aria-label="draup-logo" href="https://platform.draup.com/draup/home?time=1670574039828">
+                                    <span class="hide-on-hover"><img src="draup_grey_icon.svg" alt="draup blue"></span>
+                                    <span class="show-on-hover"><img src="draup_blue_icon.svg" alt="draup blue"></span>
+                                </a>
+                                <h1 style="font-size: 0px; margin: 0px;">Draup Application</h1>
+                                <div class="navbar-collapse collapse" id="responsive-navbar-nav">
+                                    <li class="dropdown-menu-container app-header dropdown">
+                                        <a aria-label="Tabs dropdown" id="nav-dropdown" role="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" href="#">
+                                            <span class="selected-menu-holder">Dashboard</span><span class="caret"></span>
+                                        </a>
+                                    </li>
+                                    <ul class="mr-auto left-navigation nav navbar-nav">
+                                        <li role="presentation" class="inactive">
+                                            <!-- <a href="/draup/braindesk">Explore</a> -->
+                                            <a href="#">Explore</a>
+                                        </li>
+                                        <li role="presentation" class="active">
+                                            <!-- <a href="/draup/myreports">My Reports</a> -->
+                                            <a href="#">My Reports</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="pull-right right-navigation nav navbar-nav" width="1250" height="52">
+                                        <div class="new-icon-wrapper border-radius-sm default primary interactive undefined" tabindex="0">
+                                            <i class="icon-svg large" style="background-image: url(&quot;https://s3.us-east-2.amazonaws.com/draupassets/fundamentals/Search.svg&quot;);"></i>
+                                        </div>
+                                        <div class="notes-header-icon">
+                                            <div class="tooltip-container ">
+                                                <div class="new-icon-wrapper border-radius-sm default primary interactive undefined" tabindex="0">
+                                                    <i class="icon-svg large" style="background-image: url(&quot;https://s3.us-east-2.amazonaws.com/draupassets/fundamentals/Note.svg&quot;);"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="new-icon-wrapper border-radius-sm default primary interactive undefined" tabindex="0">
+                                            <i class="icon-svg large">
+                                                <img src="download.svg" alt="download">
+                                            </i>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <main>
+                        <div class="loadedContent">
+                            <div class="page-container">
+                                <div class="academia-holder">
+                                    <div class="universe-container" style="position: relative; height: calc(100vh - 70px); overflow: hidden; font-family: Poppins; margin: 0px 10px 10px; padding-top: 15px;">
+                                        <div class="left-section" style="height: 100%; padding-right: 1px; float: left; background-color: rgb(212, 212, 212); width: 150px;"><!-- width: 126.54px; -->
+                                            <div class="universe-filter-section">
+                                                <div class="scrollable-div " style="height: auto;">
+                                                    <!-- <h6>Select Filters</h6> -->
+                                                    <input class="fil-text" type="text" name="filter" id="myInput" placeholder="Filter"> <!-- id="refdocsmyInput" -->
+                                                    <div class="perfect-scroll-container" style="position: relative; max-height: calc(100% - 44px);">
+                                                        <div class="filters-list-section"> <!-- id="refdocs_list" -->
+                                                            <ul class="list-unstyled filters" id="myUL">
+                                                                <!-- <li class="filter">Try1</li>
+                                                                <li class="filter">Try2</li>
+                                                                <li class="filter">Yonko</a></li>
+                                                                <li class="filter">Warlord</a></li>
+                                                                <li class="filter">Sample1</li>
+                                                                <li class="filter">Sample2</li> -->
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="more-option-holder " style="position: relative; bottom: 2px; height: auto; border-top: 2px solid rgb(246, 246, 246);">
+                                                    <button variant="success" type="button" class="filter-button btn btn-default" style="text-align: left;">More Filter Categories<img src="https://s3.us-east-2.amazonaws.com/draupassets/icons/arrow_down_blue.svg" class="custom-style" style="float: right;"></button>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                        <div id = "chart" style="float: left; height: 100%; width: calc(100% - 150px);">
+                                            <!-- <div class="accounts-container css-custom-table with-nav-icons">
+                                                <header>
+                                                    <div class="search-accounts">
+                                                        <div class="autosuggest-search-holder"><div class="autosuggest-body"><div role="combobox" aria-haspopup="listbox" aria-owns="react-autowhatever-1" aria-expanded="false" class="react-autosuggest__container"><input type="text" autocomplete="off" aria-autocomplete="list" aria-controls="react-autowhatever-1" class="react-autosuggest__input" placeholder="Search 13,662 Universities" aria-label="autosuggest-input-0.12793369895055262" value=""><div id="react-autowhatever-1" role="listbox" class="react-autosuggest__suggestions-container"></div></div><span class="search-icon pointer"></span></div></div>
+                                                        <div class="icons-holder pull-right">
+                                                            <span class="header-toggle-container"><span class="expand"></span></span>
+                                                            <div class="download-limit-overlay"><span class="download-btn with-hover-text" data-html2canvas-ignore="true"></span></div>
+                                                            <div class="footnote-info grey-icon "><div><div><span class="info-icon"></span></div></div></div>
+                                                        </div>
+                                                    </div>
+                                                </header>
+                                            </div> -->
+                                            <iframe title="Sample Analysis" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=9232d87e-5cfb-4faa-9996-c7f5ce924396&autoAuth=true&ctid=0bf964fe-8dc3-417e-b765-c6aae6c8dfce" frameborder="0" allowFullScreen="true"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
